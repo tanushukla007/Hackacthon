@@ -1,0 +1,11 @@
+# ABHEDYA-CHAKRA backend - exact resolved versions (pip check: clean)
+# Python 3.13.x
+fastapi==0.142.2
+uvicorn[standard]==0.54.0
+starlette==1.7.0
+pydantic==2.13.4
+polars==1.44.2
+duckdb==1.5.6
+numpy==2.3.5
+orjson==3.11.9
+weasyprint==70.0

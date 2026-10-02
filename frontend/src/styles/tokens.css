@@ -1,0 +1,111 @@
+/* ===========================================================================
+   ABHEDYA-CHAKRA design tokens.
+   Visual language: a forensic ledger, not a SaaS dashboard.
+   - zero border radius: instruments and printed returns have square corners
+   - hairline rules instead of cards with shadows
+   - serif for headings (document), monospace for every measured value (data),
+     system sans only for running prose
+   - muted earth/oxide risk palette; colour is NEVER the only carrier of meaning
+   =========================================================================== */
+:root {
+  --ink:        #0b0c0f;
+  --ink-2:      #101217;
+  --surface:    #14161c;
+  --surface-2:  #181b22;
+  --raised:     #1d212a;
+  --line:       #262a33;
+  --line-soft:  #1c1f27;
+  --text:       #e4e1d9;
+  --text-2:     #b2b0a9;
+  --muted:      #828897;   /* 5.10:1 on --surface */
+  --faint:      #6a7180;   /* 3.69:1 — decorative rules and placeholders only */
+
+  --brass:      #c8a24a;   /* the single interactive accent */
+  --brass-dim:  #8a7034;
+  --moss:       #6f9475;   /* LOW */
+  --ochre:      #c8a24a;   /* MEDIUM */
+  --oxide:      #cc7a3b;   /* HIGH */
+  --rust:       #cb5c5c;   /* CRITICAL — 4.50:1 */
+  --slate-blue: #6d90b0;   /* observed / provenance — 5.40:1 */
+
+  --font-display: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', 'JetBrains Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+
+  --rail: 196px;
+  --strip: 46px;
+
+  /* graph canvas pieces that cannot be expressed as a flat token */
+  --canvas-grid: rgba(255,255,255,.022);
+  --canvas-pane: rgba(11,12,15,.9);
+  --canvas-pane-solid: rgba(11,12,15,.99);
+  --canvas-warn: rgba(29,20,9,.95);
+  --node-halo: #0b0c0f;
+  --node-label: #b2b0a9;
+  --edge-line: #39404d;
+  --edge-arrow: #5a626f;
+  --hub-ring: #e4e1d9;
+
+  --on-brass:   #16120a;   /* text on a brass fill */
+  --brass-hi:   #d8b358;   /* brass hover */
+  --tint-brass: #1b1707;   /* faint brass wash behind notes and toggles */
+  --tint-note:  #191508;
+  --tint-warn:  #1d1409;
+  --tint-stop:  #1d0f0f;
+  --chip-line:  #253343;
+  --chip-bg:    #0e1419;
+  --scroll:     #2b303a;
+  --scroll-hi:  #3a414e;
+  --canvas-bg:  #0d0f13;
+  --tl-past:    #4a4433;
+}
+
+/* ---------------------------------------------------------------------------
+   Light instrument. Same layout, same hairlines, same meaning for every
+   colour: a printed case file instead of a lit console. Risk hues are
+   darkened so they keep their contrast on paper-white.
+   --------------------------------------------------------------------------- */
+:root[data-theme='light'] {
+  --ink:        #f2f0ea;
+  --ink-2:      #e9e6de;
+  --surface:    #faf9f5;
+  --surface-2:  #f4f2ec;
+  --raised:     #ffffff;
+  --line:       #cdc8bb;
+  --line-soft:  #e0dcd1;
+  --text:       #1c1b18;
+  --text-2:     #44423c;
+  --muted:      #6d6a62;
+  --faint:      #727066;   /* 4.72:1 */
+
+  --brass:      #8a6a18;
+  --brass-dim:  #b9a46a;
+  --moss:       #3f6b4c;
+  --ochre:      #8a6a18;
+  --oxide:      #a9521a;
+  --rust:       #94201f;
+  --slate-blue: #3c5e7d;
+
+  --canvas-grid: rgba(0,0,0,.035);
+  --canvas-pane: rgba(250,249,245,.94);
+  --canvas-pane-solid: rgba(250,249,245,1);
+  --canvas-warn: rgba(246,236,219,.97);
+  --node-halo: #faf9f5;
+  --node-label: #44423c;
+  --edge-line: #b6b0a2;
+  --edge-arrow: #8f897c;
+  --hub-ring: #1c1b18;
+
+  --on-brass:   #fdfbf4;
+  --brass-hi:   #6f5513;
+  --tint-brass: #f3ecd8;
+  --tint-note:  #f7f1de;
+  --tint-warn:  #f8ecdd;
+  --tint-stop:  #f8e3e1;
+  --chip-line:  #c2cdd8;
+  --chip-bg:    #eef3f7;
+  --scroll:     #c9c4b7;
+  --scroll-hi:  #aca699;
+  --canvas-bg:  #fbfaf6;
+  --tl-past:    #d8cfb4;
+}

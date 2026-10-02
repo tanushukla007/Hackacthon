@@ -1,0 +1,70 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Build and coverage output
+dist/
+build/
+.next/
+coverage/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environment files and local secrets
+.env
+.env.*
+!.env.example
+
+# Local data
+/dataset/
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+.vscode
+*.zip
+
+data/
+abhedya-chakra (1)/
+abhedya-chakra/
+
+# Keep the improved implementation, but exclude its local/runtime payloads.
+!improved_code/
+!improved_code/abhedya-chakra/
+!improved_code/abhedya-chakra/**
+improved_code/abhedya-chakra/.kilo/
+improved_code/abhedya-chakra/data/
+improved_code/abhedya-chakra/samples/
+improved_code/abhedya-chakra/docs/pdf/
+improved_code/abhedya-chakra/docs/docx/
+improved_code/abhedya-chakra/**/node_modules/
+improved_code/abhedya-chakra/**/.vite/
+improved_code/abhedya-chakra/**/dist/
+improved_code/abhedya-chakra/**/__pycache__/
+improved_code/abhedya-chakra/**/.pytest_cache/
+improved_code/abhedya-chakra/**/.venv/
